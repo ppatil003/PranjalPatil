@@ -1,0 +1,56 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 10;
+}
+
+.nav-button {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 5px 10px; /* Increase the horizontal margin to add more space */
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #444;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #2b7176;
+    color: black;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+*{
+    align-self: center;
+}
+.container img {
+    border: 20px solid #000; /* You can adjust the color and width of the border as needed */
+    padding: 50px; /* Optional: Add padding inside the border for a better look */
+    border-radius: 50; /* Optional: Add rounded corners */
+}
