@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM Manipulation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f06, #f4f4f4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        #introText {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #imageContainer {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .infoText {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        #dynamicTextContainer {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #444;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+      <script src="part3.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="mainHeading">Welcome to the Dynamic Web Page</h1>
+        
+        <p id="introText">Click the buttons below to manipulate this page.</p>
+        
+        <button onclick="changeText()">Change Text</button>
+        <button onclick="changeStyle()">Change Style</button>
+        <button onclick="swapImage()">Swap Image</button>
+        <button onclick="addTextNode()">Add Text</button>
+        <button onclick="deleteNode()">Delete Node</button>
+
+        <div id="imageContainer">
+            <img id="mainImage" src="https://via.placeholder.com/400x300?text=Image+1" alt="Image 1">
+        </div>
+
+        <div id="textContainer">
+            <p class="infoText">This is some additional information.</p>
+        </div>
+
+        <div id="dynamicTextContainer"></div>
+    </div>
+</body>
+</html>
+
+  
+
